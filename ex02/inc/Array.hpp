@@ -15,4 +15,12 @@ class Array
 		Array(const Array& other);
 		Array& operator=(const Array& other);
 		~Array();
+
+		T& operator[](std::size_t i);
+		const T& operator[](std::size_t i) const;
+		std::size_t size() const;
 };
+
+#include "Array.tpp"
+
+#endif
